@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5448891890377774150
+  m_GuidHigh: 13982439243246679476
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5514529930981946416
+      m_GuidHigh: 3156774222795070142
+    m_SerializedTextureGuid:
+      m_GuidLow: 17245592506495384428
+      m_GuidHigh: 13366672245714120299
+    m_Size: {x: 0.19, y: 0.25333333}
+    m_SpecifySize: 1
+    m_Name: blood_ref_test
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5039363155076373712
+      m_GuidHigh: 8474871757070935729
+    m_SerializedTextureGuid:
+      m_GuidLow: 13701101073455230528
+      m_GuidHigh: 14330382051653786744
+    m_Size: {x: 0.09, y: 0.053790487}
+    m_SpecifySize: 1
+    m_Name: activision_namecard
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5429591367524909059
+      m_GuidHigh: 13124375501536697009
+    m_SerializedTextureGuid:
+      m_GuidLow: 6905422832611952339
+      m_GuidHigh: 15896784660207954425
+    m_Size: {x: 0.30498224, y: 0.28}
+    m_SpecifySize: 1
+    m_Name: dominos
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5125860870106364522
+      m_GuidHigh: 11906973419593186493
+    m_SerializedTextureGuid:
+      m_GuidLow: 16331425558490189809
+      m_GuidHigh: 11025408008847623562
+    m_Size: {x: 0.06, y: 0.038987342}
+    m_SpecifySize: 1
+    m_Name: key_chain
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5436212098893613802
+      m_GuidHigh: 1182646441734359936
+    m_SerializedTextureGuid:
+      m_GuidLow: 2698882630838314830
+      m_GuidHigh: 10088671385707971369
+    m_Size: {x: 0.2, y: 0.15}
+    m_SpecifySize: 1
+    m_Name: mask
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5420999642677842269
+      m_GuidHigh: 4476181399445715845
+    m_SerializedTextureGuid:
+      m_GuidLow: 15543269197720680091
+      m_GuidHigh: 11924821329626991435
+    m_Size: {x: 0.3099099, y: 0.4}
+    m_SpecifySize: 1
+    m_Name: white_board
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5652931967476306200
+      m_GuidHigh: 3335388779216622990
+    m_SerializedTextureGuid:
+      m_GuidLow: 3329328470844691576
+      m_GuidHigh: 14004910358915967960
+    m_Size: {x: 0.12070272, y: 0.18}
+    m_SpecifySize: 1
+    m_Name: skull
+    m_Texture: {fileID: 0}
