@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6076392062604697797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6076392062604697798}
+  - component: {fileID: 6076392062604697799}
+  m_Layer: 0
+  m_Name: ObjectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6076392062604697798
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6076392062604697797}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6076392062604697799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6076392062604697797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c742fbb76719494fbef1dfc5c52f2a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trackedImageManager: {fileID: 0}
+  trackedImageText: {fileID: 0}
+  refImageNames:
+  - blood_ref_test
+  - skull
+  - dominos
+  - activision_namecard
+  prefabs:
+  - {fileID: 7952601899698578186, guid: 321e37fe8fbfdc2488ee0c56ba1d533a, type: 3}
+  - {fileID: 8243068150182689910, guid: c82f1fc57aea6f347a86669f4793df99, type: 3}
+  - {fileID: 9132677593934625996, guid: a0f1f69f388e4ed4686737e662bd2903, type: 3}
+  - {fileID: 2223000074736690166, guid: 790134e2d460d2a4bbd1e3af1cb33377, type: 3}
