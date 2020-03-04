@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3105646273116907682}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: KnifeStainWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,6 +97,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KnifeStain
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 73918e0d5553bff4aadf42997df92cdc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73918e0d5553bff4aadf42997df92cdc, type: 3}

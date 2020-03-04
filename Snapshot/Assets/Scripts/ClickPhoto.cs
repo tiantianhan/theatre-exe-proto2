@@ -25,16 +25,20 @@ public class ClickPhoto : MonoBehaviour
     [SerializeField]
     RawImage flash_image;
 
+    [SerializeField]
+    Camera maincam;
+
     Color originalColor;
 
-    float duration = 53;
-    float smoothness = 0.02f;
-    
+    float duration = 10;
+    float smoothness = 0.002f;
+
 
 
     private void Start()
     {
         originalColor = flash_image.color;
+        
     }
 
     //public void clickPhotoNow()
@@ -75,6 +79,10 @@ public class ClickPhoto : MonoBehaviour
         //disable UI for rendering image
         GameObject.Find("Canvas").GetComponent<Canvas>().enabled = false;
 
+        //Flash camera image and fade it over time (0 - 100) within 3 seconds 
+        yield return StartCoroutine(FlashImage());
+
+
         //read the screen buffer oly after camera and gui are rendered but before its displayed - therefore when I comment it out, I can see both UI and VO
         yield return new WaitForEndOfFrame();
 
@@ -83,17 +91,22 @@ public class ClickPhoto : MonoBehaviour
         //read screen content into texture 
         m_LastCameraTexture.ReadPixels(new Rect(0, 0, m_ARCameraBackground.material.mainTexture.width, m_ARCameraBackground.material.mainTexture.height), 0, 0);
         m_LastCameraTexture.Apply();
+       
+
+
 
         //save image
-        NativeGallery.SaveImageToGallery(m_LastCameraTexture, "Camera", "hiiipppOOp");
+        NativeGallery.SaveImageToGallery(m_LastCameraTexture, "Camera", "Help");
 
-        //Flash camera image and fade it over time (0 - 100) within 3 seconds 
-        yield return StartCoroutine(FlashImage());
+       
+
 
         
+       Camera.main.cullingMask &= ~(1 << 8); //minus 8th layer
         //enable UI  for user again 
         GameObject.Find("Canvas").GetComponent<Canvas>().enabled = true;
 
+      
         yield return new WaitForSeconds(0.3f);
 
         flash_image.color = originalColor;
@@ -107,11 +120,18 @@ public class ClickPhoto : MonoBehaviour
         float increment = smoothness / duration;
         
 
+
         while (progress < 1)
         {
+            
+           
             flash_image.color = Color.Lerp(flash_image.color, Color.red, progress);
+           
+            Camera.main.cullingMask |= (1 << 8);
             progress += increment;
             
+            
+
         }
         yield return new WaitForSeconds(smoothness);
  

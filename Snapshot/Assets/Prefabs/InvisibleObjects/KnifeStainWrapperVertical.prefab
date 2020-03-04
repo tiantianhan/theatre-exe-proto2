@@ -7,6 +7,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1337110744289237990, guid: 7f361882fc21fac49a99b2040be46057,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2654035234087053813, guid: 7f361882fc21fac49a99b2040be46057,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -95,7 +100,12 @@ PrefabInstance:
     - target: {fileID: 3229298514655398412, guid: 7f361882fc21fac49a99b2040be46057,
         type: 3}
       propertyPath: m_Name
-      value: KnifeStainWrapper
+      value: KnifeStainWrapperVertical
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229298514655398412, guid: 7f361882fc21fac49a99b2040be46057,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f361882fc21fac49a99b2040be46057, type: 3}
